@@ -3,10 +3,10 @@
 
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
-}
+//int main()
+//{
+//    std::cout << "Hello World!\n";
+//}
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
 // プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー
