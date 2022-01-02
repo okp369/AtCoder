@@ -36,3 +36,6 @@ AtCoder/x64/Debug/ソース2.obj.enc
 AtCoder/ソース3.h
 AtCoder/.vs/AtCoder/v17/ipch/AutoPCH/261b41b9120b0290/ソース3.ipch
 AtCoder/x64/Debug/ソース3.obj
+*.ipch
+*.obj
+*.enc
