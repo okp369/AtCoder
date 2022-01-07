@@ -6,29 +6,35 @@ using namespace std;
 typedef long long ll;
 
 int main() {
-    ll n; cin >> n;
-    vector<ll> a(n);
-    for (int i = 0; i <= n - 1; i++)cin >> a[i];
-    ll x; cin >> x;
-    ll sum = 0;
-
-    for (ll val : a)
+    //sort(a.begin(), a.end());
+    //vector<vector<int>> A(N, vector<int>(2));
+    int N;
+    cin >> N;
+    vector<int> S(N);
+    for (int i = 0; i < N; i++)
     {
-        sum += val;
+        cin >> S[i];
     }
 
-    ll P = x / sum;
-    ll sumb = P * sum;
-    ll ans = P * n;
-
-    for (ll val : a) 
+    int ans = 0;
+    
+    for (int i = 0; i < N; i++)
     {
-        sumb += val;
-        ans++;
-        if (sumb > x) {
-            cout << ans << endl;
-            return 0;
+        bool cansolve = false;
+        for (int a = 1; a < 1000; a++)
+        {
+            for (int b = 1; b < 1000; b++)
+            {
+                if (4 * a * b + 3 * a + 3 * b == S[i])
+                {
+                    cansolve = true;
+                }
+            }
+        }
+        if (!cansolve)
+        {
+            ++ans;
         }
     }
-    return 0;
+    cout << ans << endl;
 }
