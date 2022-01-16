@@ -10,18 +10,23 @@
 //    //vector<vector<int>> A(N, vector<int>(2));
 //    int N;
 //    cin >> N;
-//    
-//    if (N == 0)
+//    vector<int> H(N);
+//    for (int i = 0; i < N; i++)
 //    {
-//        cout << "No" << endl;
+//        cin >> H[i];
 //    }
-//    else {
-//        if (N % 100 == 0)
+//
+//    int tmp = H[0];
+//    for (int i = 1; i < N; i++)
+//    {
+//        if (H[i] > tmp)
 //        {
-//            cout << "Yes" << endl;
+//            tmp = H[i];
 //        }
 //        else {
-//            cout << "No" << endl;
+//            break;
 //        }
 //    }
+//
+//    cout << tmp << endl;
 //}
