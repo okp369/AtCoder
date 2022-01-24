@@ -12,31 +12,29 @@
 //    //vector<vector<int>> A(N, vector<int>(2));
 //        //map<int, vector<int>> mp;  ->  mp[a].push_back(i+1);
 //    //map<string, int> s; s[title] += 1; for (pair<string,int> val : s){} cnt = max(cnt, val.second);
-//    int N;
-//    cin >> N;
-//    vector<int> a(N);
-//    rep(i, N)
-//    {
-//        cin >> a[i];
-//    }
+//    string s;
+//    cin >> s;
 //
-//    int x = a[0];
-//    for(int i = 1; i < N; i++)
-//    {
-//        if (x > a[i])
-//        {
-//            break;
-//        }
-//        else {
-//            x = a[i];
-//        }
-//    }
+//    int a, b;
+//    cin >> a >> b;
 //
-//    for (int i = 0; i < a.size(); i++)
+//    string aa, bb;
+//    aa = s[b - 1]; //u
+//    bb = s[a - 1]; //o
+//
+//    for (int i = 0; i < s.size(); i++)
 //    {
-//        if (a[i] != x)
+//        if (i == a-1)
 //        {
-//            cout << a[i] << " ";
+//            cout << aa;
+//        }
+//        else if (i == b-1)
+//        {
+//            cout << bb;
+//        }
+//        else 
+//        {
+//            cout << s[i];
 //        }
 //    }
 //}
